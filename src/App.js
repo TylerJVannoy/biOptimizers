@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 
-import VideoDetail from "./components/VideoDetail";
 import VideoList from "./components/VideoList";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import youtube from "./components/apis/youtube";
+
+const VideoDetail = React.lazy(() => import("./components/VideoDetail"));
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
@@ -36,9 +37,11 @@ class App extends React.Component {
     return (
       <div>
         <Navbar></Navbar>
-        <div className="container">
-          <VideoDetail video={this.state.selectedVideo} />
-        </div>
+        <Suspense fallback={<div>Loading</div>}>
+          <div className="container">
+            <VideoDetail video={this.state.selectedVideo} />
+          </div>
+        </Suspense>
         <div className="container">
           <VideoList
             onVideoSelect={this.onVideoSelect}

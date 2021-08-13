@@ -15,7 +15,7 @@ export default function Navbar() {
             loading="lazy"
             className="img-fluid"
             width="476"
-            height="auto"
+            height="127.67"
             src="https://fb-v1.cdn-bio.com/assets/bio-logo-optimizing-2004-light-5033b0022127b4dde068830083376add.svg"
             alt="biOptimizers Logo"
           ></img>

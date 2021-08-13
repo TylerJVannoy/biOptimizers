@@ -8,7 +8,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
       <div onClick={() => onVideoSelect(video)} className="item video-item">
         <div className="card border-0">
           <img
-            className=" image"
+            className=" image img-fluid"
             loading="lazy"
             height="468"
             width="624"

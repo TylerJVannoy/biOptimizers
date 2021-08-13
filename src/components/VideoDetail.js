@@ -16,7 +16,11 @@ const VideoDetail = ({ video }) => {
       ></img>
 
       <div className="embed-responsive embed-responsive-16by9 responsive-video mt-2">
-        <iframe className="embed-responsive-item" src={videoSrc}></iframe>
+        <iframe
+          className="embed-responsive-item"
+          src={videoSrc}
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   );

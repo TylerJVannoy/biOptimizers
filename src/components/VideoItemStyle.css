@@ -1,4 +1,4 @@
 .image {
-  width: 200px;
-  aspect-ratio: 1/2;
+  width: 100%;
+  height: auto;
 }

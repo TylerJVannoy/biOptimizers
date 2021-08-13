@@ -8,7 +8,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
       <div onClick={() => onVideoSelect(video)} className="item video-item">
         <div className="card border-0">
           <img
-            width="200"
+            width="425"
             height="auto"
             className=""
             src={video.snippet.thumbnails.high.url}

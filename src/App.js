@@ -1,12 +1,11 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 
 import VideoList from "./components/VideoList";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import youtube from "./components/apis/youtube";
 
-const VideoDetail = React.lazy(() => import("./components/VideoDetail"));
+const Navbar = React.lazy(() => import("./components/Navbar"));
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
@@ -35,17 +34,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar></Navbar>
+      <Suspense fallback={<div>LOADING</div>}>
+        <div>
+          <Navbar></Navbar>
 
-        <div className="container">
-          <VideoList
-            onVideoSelect={this.onVideoSelect}
-            videos={this.state.videos}
-          />
+          <div className="container">
+            <VideoList
+              onVideoSelect={this.onVideoSelect}
+              videos={this.state.videos}
+            />
+          </div>
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
-      </div>
+      </Suspense>
     );
   }
 }

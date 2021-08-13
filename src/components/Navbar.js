@@ -12,6 +12,7 @@ export default function Navbar() {
 "
         >
           <img
+            loading="lazy"
             className="img-fluid"
             width="476"
             height="auto"

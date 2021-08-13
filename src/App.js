@@ -37,11 +37,7 @@ class App extends React.Component {
     return (
       <div>
         <Navbar></Navbar>
-        <Suspense fallback={<div>Loading</div>}>
-          <div className="container">
-            <VideoDetail video={this.state.selectedVideo} />
-          </div>
-        </Suspense>
+
         <div className="container">
           <VideoList
             onVideoSelect={this.onVideoSelect}
@@ -55,3 +51,11 @@ class App extends React.Component {
 }
 
 export default App;
+
+/*
+        <Suspense fallback={<div>Loading</div>}>
+          <div className="container">
+            <VideoDetail video={this.state.selectedVideo} />
+          </div>
+        </Suspense>
+        */

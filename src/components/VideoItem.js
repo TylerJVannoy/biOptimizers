@@ -9,7 +9,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
         <div className="card border-0">
           <img
             width="200"
-            aspect-ratio="1/2"
+            height="auto"
             className=" image"
             src={video.snippet.thumbnails.high.url}
             alt={video.snippet.channelTitle}

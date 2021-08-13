@@ -9,9 +9,6 @@ const VideoItem = ({ video, onVideoSelect }) => {
         <div className="card border-0">
           <img
             className=" image"
-            loading="lazy"
-            height="468"
-            width="auto"
             src={video.snippet.thumbnails.high.url}
             alt={video.snippet.channelTitle}
           ></img>

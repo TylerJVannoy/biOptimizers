@@ -1,10 +1,12 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, useEffect } from "react";
 
 import VideoList from "./components/VideoList";
 
 import youtube from "./components/apis/youtube";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+import ReactGa from "react-ga";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
@@ -28,6 +30,9 @@ class App extends React.Component {
 
   componentDidMount() {
     this.onTermSubmit("Workout routine");
+    ReactGa.initialize("G-3SF8K2XFRN");
+
+    ReactGa.pageview("/");
   }
 
   //follow onVideoSelect, it is defined here and passed into the render() function as a prop on VideoList, move to VideoList.js now

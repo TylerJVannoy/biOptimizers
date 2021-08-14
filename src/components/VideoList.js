@@ -17,9 +17,11 @@ const VideoList = ({ videos, onVideoSelect }) => {
   //Move to VideoItem.js now
   //props.videos
   return (
-    <div className="">
-      <div className="">{renderedList}</div>
-    </div>
+    <section className="section">
+      <div className="container">
+        <div className="">{renderedList}</div>
+      </div>
+    </section>
   );
 };
 

@@ -21,7 +21,10 @@ const VideoItem = ({ video, onVideoSelect }) => {
             Some quick example text to build on the title and make up the bulk
             of the card's content.
           </p>
-          <a href="#" class="btn btn-primary">
+          <a
+            href={`https://www.youtube.com/watch?v=${video.div.vieoId}`}
+            class="btn btn-primary"
+          >
             Watch Video
           </a>
         </div>

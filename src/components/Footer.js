@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className=" justify-content-center text-light ">
       <footer>
-        <div className="row my-5 justify-content-center py-5">
+        <div className="row justify-content-center">
           <div className="col-11">
             <div className="row ">
               <div className="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
@@ -49,7 +49,7 @@ export default function Footer() {
                   <span></span> support@bioptimizers.com
                 </small>
               </div>
-              <div className="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+              <div className="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end ">
                 <h6 className="text-muted bold-text">
                   <b>TYLER VANNOY</b>
                 </h6>

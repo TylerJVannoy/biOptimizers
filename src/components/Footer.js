@@ -4,10 +4,13 @@ import FooterStyle from "./FooterStyle.css";
 
 export default function Footer() {
   return (
-    <footer class="bg-dark text-center text-lg-start">
-      <div class="text-center text-light p-3">
+    <footer className="bg-dark text-center text-lg-start">
+      <div className="text-center text-light p-3">
         © 2021 Copyright:
-        <a class="text-light" href="https://frontend-portfolio-one.vercel.app/">
+        <a
+          className="text-light"
+          href="https://frontend-portfolio-one.vercel.app/"
+        >
           Tyler Vannoy
         </a>
       </div>

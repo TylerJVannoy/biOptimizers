@@ -2,21 +2,26 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="navbar has-background-dark">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="">
+    <nav className="navbar navbar-light bg-dark">
+      <div className="container">
+        <a
+          className="navbar-brand"
+          href="https://bioptimizers.com/
+"
+        >
           <img
-            loading="lazy"
+            className="img-fluid"
+            width="476"
+            height="auto"
             src="https://fb-v1.cdn-bio.com/assets/bio-logo-optimizing-2004-light-5033b0022127b4dde068830083376add.svg"
-            width="112"
-            height="28"
+            alt="biOptimizers Logo"
           ></img>
         </a>
-      </div>
-      <div className="navbar-end">
-        <div className="navbar-item">
-          <a className="button is-primary">
-            <strong>Shop Now</strong>
+        <div>
+          <a href="https://shop.bioptimizers.com/collections/all">
+            <span>
+              <p className="icon">Store</p>
+            </span>
           </a>
         </div>
       </div>

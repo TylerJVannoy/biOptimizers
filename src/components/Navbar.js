@@ -1,7 +1,5 @@
 import React from "react";
 
-import NavbarStyle from "./NavbarStyle.css";
-
 export default function Navbar() {
   return (
     <nav className="navbar navbar-light bg-dark">

@@ -5,7 +5,7 @@ export default function View() {
     <div>
       <div className="container divcon">
         <div className="row text-center">
-          <div className="col-sm mt-5">
+          <div className="col-sm">
             <div className="card stylecard">
               <div className="card-header">Featured</div>
               <ul className="list-group list-group-flush">

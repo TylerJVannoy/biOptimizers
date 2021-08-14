@@ -6,7 +6,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
   //Same thing was done here we destructured onVideoSelect and added an onClick event handler and used an arrow function envoking the onVideoSelect and passed video as its argument
   //an arrow function was used so we can pass onVideoSelect with an argument, that argument was video.
   return (
-    <div class="col-sm">
+    <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
         <img
           class="card-img-top"

@@ -9,7 +9,9 @@ const VideoItem = ({ video, onVideoSelect }) => {
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
         <img
-          class="card-img-top"
+          class="card-img-top img-fluid"
+          width="414"
+          height="310.5"
           src={video.snippet.thumbnails.high.url}
           alt="Card image cap"
         />

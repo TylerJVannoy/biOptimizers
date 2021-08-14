@@ -11,6 +11,8 @@ const VideoItem = ({ video, onVideoSelect }) => {
         <div className="">
           <img
             className=" image"
+            width="1296"
+            height="972"
             src={video.snippet.thumbnails.high.url}
             alt={video.snippet.channelTitle}
           ></img>

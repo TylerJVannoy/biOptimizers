@@ -1,4 +1,34 @@
-.image {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 1400px) {
+  .image {
+    width: 1116px;
+    height: 837px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .image {
+    width: 936px;
+    height: 702px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .image {
+    width: 696px;
+    height: 522px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 516px;
+    height: 387px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image {
+    width: 459px;
+    height: 344.25px;
+  }
 }

@@ -10,7 +10,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
       <div onClick={() => onVideoSelect(video)} className="item video-item">
         <div className="card border-0">
           <img
-            rel="preload"
+            loading="lazy"
             as="image"
             class="image"
             src={video.snippet.thumbnails.high.url}

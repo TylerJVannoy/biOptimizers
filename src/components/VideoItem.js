@@ -14,11 +14,14 @@ const VideoItem = ({ video, onVideoSelect }) => {
             src={video.snippet.thumbnails.high.url}
             alt={video.snippet.channelTitle}
           ></img>
-          <div className="card-body">
-            <h5 className="card-title">{video.snippet.title}</h5>
+          <div className="text-center">
+            <h5 className="">{video.snippet.title}</h5>
             <p className="card-text">{video.snippet.description}</p>
-            <a href="#" className="btn btn-primary">
-              View
+            <a
+              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              className="btn btn-primary"
+            >
+              Watch
             </a>
           </div>
         </div>

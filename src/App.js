@@ -4,6 +4,7 @@ import VideoList from "./components/VideoList";
 
 import youtube from "./components/apis/youtube";
 
+const Footer = React.lazy(() => import("./components/Footer"));
 const Navbar = React.lazy(() => import("./components/Navbar"));
 
 class App extends React.Component {
@@ -42,6 +43,7 @@ class App extends React.Component {
             videos={this.state.videos}
           />
         </div>
+        <Footer></Footer>
       </Suspense>
     );
   }

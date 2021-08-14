@@ -16,7 +16,7 @@ export default function Navbar() {
         <div>
           <a href="https://shop.bioptimizers.com/collections/all">
             <span>
-              <p className="icon">Store</p>
+              <p className="btn btn-primary">Store</p>
             </span>
           </a>
         </div>

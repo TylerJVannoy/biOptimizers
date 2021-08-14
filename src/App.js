@@ -4,8 +4,7 @@ import VideoList from "./components/VideoList";
 
 import youtube from "./components/apis/youtube";
 import Navbar from "./components/Navbar";
-
-const Footer = React.lazy(() => import("./components/Footer"));
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };

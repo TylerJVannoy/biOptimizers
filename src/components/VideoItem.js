@@ -22,7 +22,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
             of the card's content.
           </p>
           <a
-            href={`https://www.youtube.com/watch?v=${video.div.vieoId}`}
+            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
             class="btn btn-primary"
           >
             Watch Video

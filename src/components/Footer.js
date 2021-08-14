@@ -37,18 +37,8 @@ export default function Footer() {
               <div className="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
                 <p className="social text-muted mb-0 pb-0 bold-text">
                   {" "}
-                  <span className="mx-2">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </span>{" "}
-                  <span className="mx-2">
-                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                  </span>{" "}
-                  <span className="mx-2">
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
-                  </span>{" "}
-                  <span className="mx-2">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                  </span>{" "}
+                  <span className="mx-2"></span> <span className="mx-2"></span>{" "}
+                  <span className="mx-2"></span> <span className="mx-2"></span>{" "}
                 </p>
                 <small className="rights">
                   <span>&copy;</span> BiOptimizers USA, Inc. All Rights
@@ -61,10 +51,7 @@ export default function Footer() {
                 </h6>
                 <small>
                   {" "}
-                  <span>
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                  </span>{" "}
-                  support@bioptimizers.com
+                  <span></span> support@bioptimizers.com
                 </small>
               </div>
               <div className="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
@@ -72,10 +59,7 @@ export default function Footer() {
                   <b>TYLER VANNOY</b>
                 </h6>
                 <small>
-                  <span>
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                  </span>{" "}
-                  tylervannoy@hotmail.com
+                  <span></span> tylervannoy@hotmail.com
                 </small>
               </div>
             </div>

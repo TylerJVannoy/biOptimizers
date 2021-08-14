@@ -30,7 +30,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.onTermSubmit("Workout routine");
-    ReactGa.initialize("G-3SF8K2XFRN");
+    ReactGa.initialize("UA-204889735-1");
 
     ReactGa.pageview("/");
   }

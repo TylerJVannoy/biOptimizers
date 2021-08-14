@@ -8,7 +8,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
   return (
     <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-3">
       <div onClick={() => onVideoSelect(video)} className="item video-item">
-        <div className="card border-0">
+        <div className="card border-0 h-100 bg-dark">
           <img
             loading="lazy"
             as="image"
@@ -17,8 +17,6 @@ const VideoItem = ({ video, onVideoSelect }) => {
             alt={video.snippet.channelTitle}
           ></img>
           <div className="card-body">
-            <h5 className="card-title">{video.snippet.title}</h5>
-            <p className="card-text">{video.snippet.description}</p>
             <a href="#" className="btn btn-primary">
               View
             </a>
@@ -30,3 +28,9 @@ const VideoItem = ({ video, onVideoSelect }) => {
 };
 
 export default VideoItem;
+
+/*
+            <p className="card-text">{video.snippet.description}</p>
+                        <h5 className="card-title">{video.snippet.title}</h5>
+
+*/

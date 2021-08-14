@@ -16,6 +16,7 @@ class App extends React.Component {
         q: term,
       },
     });
+
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
@@ -37,12 +38,13 @@ class App extends React.Component {
       <Suspense fallback={<div>LOADING</div>}>
         <div>
           <Navbar></Navbar>
-
           <div className="container">
-            <VideoList
-              onVideoSelect={this.onVideoSelect}
-              videos={this.state.videos}
-            />
+            <div className="row">
+              <VideoList
+                onVideoSelect={this.onVideoSelect}
+                videos={this.state.videos}
+              />
+            </div>
           </div>
           <Footer></Footer>
         </div>

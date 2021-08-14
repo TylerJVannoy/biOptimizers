@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from "react";
 
 import VideoList from "./components/VideoList";
-import Footer from "./components/Footer";
 
 import youtube from "./components/apis/youtube";
 

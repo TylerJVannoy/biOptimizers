@@ -18,7 +18,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
   //props.videos
   return (
     <div className="container">
-      <div className="">
+      <div className="text-center">
         <h3>Awesome Health Course</h3>
       </div>
       <div className="">{renderedList}</div>

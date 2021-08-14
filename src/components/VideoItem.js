@@ -14,7 +14,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
             src={video.snippet.thumbnails.high.url}
             alt={video.snippet.channelTitle}
           ></img>
-          <div className="text-center">
+          <div className="">
             <h5 className="">{video.snippet.title}</h5>
             <p className="card-text">{video.snippet.description}</p>
             <a

@@ -8,7 +8,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
   return (
     <div className="col">
       <div onClick={() => onVideoSelect(video)} className="item video-item">
-        <div className="">
+        <div className="text-center">
           <img
             className=" image"
             width="1296"

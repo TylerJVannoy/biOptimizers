@@ -3,9 +3,9 @@ import React, { Suspense, lazy } from "react";
 import VideoList from "./components/VideoList";
 
 import youtube from "./components/apis/youtube";
+import Navbar from "./components/Navbar";
 
 const Footer = React.lazy(() => import("./components/Footer"));
-const Navbar = React.lazy(() => import("./components/Navbar"));
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };

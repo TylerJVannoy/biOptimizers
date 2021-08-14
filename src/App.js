@@ -48,7 +48,6 @@ class App extends React.Component {
             videos={this.state.videos}
           />
         </div>
-        <View></View>
         <Footer></Footer>
       </Suspense>
     );

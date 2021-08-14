@@ -37,14 +37,10 @@ class App extends React.Component {
       <Suspense fallback={<div>LOADING</div>}>
         <div>
           <Navbar></Navbar>
-          <div className="container">
-            <div className="row">
-              <VideoList
-                onVideoSelect={this.onVideoSelect}
-                videos={this.state.videos}
-              />
-            </div>
-          </div>
+          <VideoList
+            onVideoSelect={this.onVideoSelect}
+            videos={this.state.videos}
+          />
         </div>
       </Suspense>
     );

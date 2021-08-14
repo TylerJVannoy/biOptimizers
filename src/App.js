@@ -1,10 +1,11 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 
 import VideoList from "./components/VideoList";
 
 import youtube from "./components/apis/youtube";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import View from "./components/View";
 
 import ReactGa from "react-ga";
 
@@ -47,6 +48,7 @@ class App extends React.Component {
             videos={this.state.videos}
           />
         </div>
+        <View></View>
         <Footer></Footer>
       </Suspense>
     );

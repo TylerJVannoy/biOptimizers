@@ -6,26 +6,22 @@ const VideoItem = ({ video, onVideoSelect }) => {
   //Same thing was done here we destructured onVideoSelect and added an onClick event handler and used an arrow function envoking the onVideoSelect and passed video as its argument
   //an arrow function was used so we can pass onVideoSelect with an argument, that argument was video.
   return (
-    <div className="col">
-      <div onClick={() => onVideoSelect(video)} className="item video-item">
-        <div className="text-center">
-          <img
-            className=" image"
-            width="1296"
-            height="972"
-            src={video.snippet.thumbnails.high.url}
-            alt={video.snippet.channelTitle}
-          ></img>
-          <div className="">
-            <h5 className="">{video.snippet.title}</h5>
-            <p className="card-text">{video.snippet.description}</p>
-            <a
-              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-              className="btn btn-primary"
-            >
-              Watch
-            </a>
-          </div>
+    <div class="col-sm">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src={video.snippet.thumbnails.high.url}
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">
+            Go somewhere
+          </a>
         </div>
       </div>
     </div>
@@ -39,3 +35,29 @@ export default VideoItem;
                         <h5 className="card-title">{video.snippet.title}</h5>
 
 */
+
+{
+  /* <div className="col-s-12 col-md-6 col-lg-2">
+<div onClick={() => onVideoSelect(video)} className="item video-item">
+  <div className="card text-center">
+    <img
+      className=" image"
+      width="1296"
+      height="972"
+      src={video.snippet.thumbnails.high.url}
+      alt={video.snippet.channelTitle}
+    ></img>
+    <div className="card">
+      <h5 className="card-title">{video.snippet.title}</h5>
+      <p className="card-text">{video.snippet.description}</p>
+      <a
+        href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+        className="btn btn-primary"
+      >
+        Watch
+      </a>
+    </div>
+  </div>
+</div>
+</div> */
+}

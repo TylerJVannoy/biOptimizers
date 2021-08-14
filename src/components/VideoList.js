@@ -21,7 +21,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
       <div className="text-center">
         <h3>Awesome Health Course</h3>
       </div>
-      <div className="">{renderedList}</div>
+      <div className="row">{renderedList}</div>
     </div>
   );
 };

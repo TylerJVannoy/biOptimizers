@@ -4,7 +4,7 @@ import FooterStyle from "./FooterStyle.css";
 
 export default function Footer() {
   return (
-    <div className="container-fluid pb-0 mb-0 justify-content-center text-light ">
+    <div className="container pb-0 mb-0 justify-content-center text-light ">
       <footer>
         <div className="row my-5 justify-content-center py-5">
           <div className="col-11">

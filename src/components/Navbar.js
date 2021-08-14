@@ -4,11 +4,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-light bg-dark">
       <div className="container">
-        <a
-          className="navbar-brand"
-          href="https://bioptimizers.com/
-"
-        >
+        <a className="navbar-brand" href="https://bioptimizers.com/">
           <img
             className="img-fluid"
             width="476"

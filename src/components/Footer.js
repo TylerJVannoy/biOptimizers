@@ -35,11 +35,6 @@ export default function Footer() {
             </div>
             <div className="row ">
               <div className="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                <p className="social text-muted mb-0 pb-0 bold-text">
-                  {" "}
-                  <span className="mx-2"></span> <span className="mx-2"></span>{" "}
-                  <span className="mx-2"></span> <span className="mx-2"></span>{" "}
-                </p>
                 <small className="rights">
                   <span>&copy;</span> BiOptimizers USA, Inc. All Rights
                   Reserved.
